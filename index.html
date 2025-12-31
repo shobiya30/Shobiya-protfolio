@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00bcd4;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+        .about p {
+            line-height: 1.6;
+        }
+
+        .skills ul {
+            list-style: none;
+        }
+
+        .skills li {
+            background: #00bcd4;
+            color: white;
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        .projects .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .contact button {
+            padding: 10px 20px;
+            background: #222;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background: #00bcd4;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #222;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Shobiya Senthikumar</h1>
+        <p>Web Developer | Student | Programmer</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+            Hi! I am a student learning web development.  
+            I like building websites and learning new technologies.
+        </p>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>C-Progrmming</li>
+            <li>Java</li>
+            <li>Python</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>A personal portfolio website using HTML and CSS.</p>
+        </div>
+
+        <div class="card">
+            <h3>Mini Project</h3>
+            <p>A small project on solar powered irrigation system.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button onclick="sendMessage()">Send</button>
+    </section>
+
+    <footer>
+        <p>© 2025 Your Name</p>
+    </footer>
+
+    <script>
+        function sendMessage() {
+            alert("Message sent! (This is just a demo)");
+        }
+    </script>
+
+</body>
+</html>
